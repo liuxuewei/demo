@@ -1,1 +1,13 @@
 @import '~@alifd/next/dist/next.css';
+body{
+   
+}
+.left-menu{
+    background: blue;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+.main-content{
+    width: 100%;
+}

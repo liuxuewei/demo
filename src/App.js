@@ -1,14 +1,24 @@
-import { Button } from '@alifd/next';
+import { Button, Grid } from '@alifd/next';
 import './App.css';
+
+const { Row, Col } = Grid;
  
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>hello,react</div>
-        <Button type="normal">Normal</Button>
-        <Button type="primary">Prirmary</Button>
-      </header>
+    <div className="app">
+      <Row>
+        <Col fixedSpan="12">
+          <div className='left-menu'>
+            <div>hello,react</div>
+          </div>
+        </Col>
+        <Col>
+          <div className="main-content">
+          <Button type="normal">Normal</Button>
+          <Button type="primary">Prirmary</Button>
+        </div>
+        </Col>
+      </Row>
     </div>
   );
 }
